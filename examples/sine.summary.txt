@@ -1,0 +1,7 @@
+kalman-filter-1d filter (scalar, q=0.01, r=0.09, p0=1) — sine.csv
+samples: 200
+RMSE raw measurements : 0.298160
+RMSE filtered         : 0.165217
+improvement factor    : 1.805x
+NEES mean             : 1.0694 (95% interval [0.8136, 1.2053]) → CONSISTENT
+mean NIS              : 0.9925

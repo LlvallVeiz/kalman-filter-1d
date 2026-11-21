@@ -1,0 +1,7 @@
+kalman-filter-1d filter (scalar, q=0.01, r=0.1, p0=1) — examples/step.csv
+samples: 200
+RMSE raw measurements : 0.496934
+RMSE filtered         : 0.405753
+improvement factor    : 1.225x
+NEES mean             : 6.0778 (95% interval [0.8136, 1.2053]) → INCONSISTENT
+mean NIS              : 3.9490

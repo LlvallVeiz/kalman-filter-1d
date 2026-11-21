@@ -1,0 +1,16 @@
+hand-check: scalar Kalman filter, x0=0, P0=1, Q=0.01, R=0.1
+measurements z = [1.0, 1.1, 0.9]
+
+step 1: predict  x⁻=0, P⁻=1.01; K=1.01/1.11=0.9099
+        update   x=0+0.9099·(1.0−0)=0.9099, P=(1−0.9099)·1.01=0.0910
+step 2: predict  x⁻=0.9099, P⁻=0.1010; K=0.1010/0.2010=0.5025
+        update   x=0.9099+0.5025·(1.1−0.9099)=1.0054, P=0.0502
+step 3: predict  x⁻=1.0054, P⁻=0.0602; K=0.0602/0.1602=0.3760
+        update   x=1.0054+0.3760·(0.9−1.0054)=0.9658, P=0.0376
+
+live run (same numbers, computed by the filter itself):
+  z=1.0: x_pred=0.0000 P_pred=1.0100 K=0.9099 innovation=+1.0000 → x=0.9099 P=0.0910
+  z=1.1: x_pred=0.9099 P_pred=0.1010 K=0.5025 innovation=+0.1901 → x=1.0054 P=0.0502
+  z=0.9: x_pred=1.0054 P_pred=0.0602 K=0.3760 innovation=-0.1054 → x=0.9658 P=0.0376
+
+steady-state gain K∞ = 0.2702, P∞ = 0.0270

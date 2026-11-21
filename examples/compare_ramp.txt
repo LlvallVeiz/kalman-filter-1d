@@ -1,0 +1,6 @@
+compare — ramp.csv (200 samples, q=0.01, r=0.25, p0=1)
+  raw measurements : RMSE 0.496934
+  scalar Kalman    : RMSE 0.499785 (0.99x better than raw)
+  CV Kalman        : RMSE 0.308756 (1.61x better than raw)
+  alpha-beta (a=0.913, b=0.996) : RMSE 0.460898 (1.08x better than raw)
+best: CV Kalman (RMSE 0.308756)

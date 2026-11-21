@@ -1,0 +1,10 @@
+kalman-filter-1d filter (scalar, q=0.01, r=0.04, p0=1) — temp_sensor.csv
+samples: 288
+RMSE raw measurements : 0.193367
+RMSE filtered         : 0.113257
+improvement factor    : 1.707x
+NEES mean             : 1.0655 (95% interval [0.8433, 1.1698]) → CONSISTENT
+mean NIS              : 1.0503
+wrote temp_sensor_adaptive.filtered.csv
+wrote temp_sensor_adaptive.summary.txt
+adaptive: final R estimate 0.021973, mean NIS 0.9541

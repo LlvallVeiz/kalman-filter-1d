@@ -1,0 +1,7 @@
+file, samples, rmse_raw, rmse_filtered, improvement, nees_mean, status
+altitude.csv, 1000, 1.0043, 0.8467, 1.19x, 6.188, ok
+ramp.csv, 200, 0.4969, 0.3107, 1.60x, 0.832, ok
+sine.csv, 200, 0.2982, 0.1727, 1.73x, 0.257, ok
+step.csv, 200, 0.4969, 0.3371, 1.47x, 0.980, ok
+temp_sensor.csv, 288, 0.1934, 0.1118, 1.73x, 0.108, ok
+batch: 5/5 files filtered → batch_output
