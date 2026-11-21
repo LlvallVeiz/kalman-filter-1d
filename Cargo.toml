@@ -1,0 +1,21 @@
+[package]
+name = "kalman-filter-1d"
+version = "1.0.0"
+edition = "2021"
+description = "One-dimensional Kalman filtering in pure Rust: scalar and constant-velocity filters, alpha-beta comparison, RTS smoothing, adaptive noise estimation, and NEES consistency validation"
+license = "MIT"
+authors = ["LlvallVeiz"]
+repository = "https://github.com/LlvallVeiz/kalman-filter-1d"
+keywords = ["kalman-filter", "state-estimation", "signal-processing", "sensor-fusion", "cli"]
+categories = ["science", "command-line-utilities"]
+
+[[bin]]
+name = "kalman-filter-1d"
+path = "src/main.rs"
+
+[lib]
+name = "kalman_filter_1d"
+path = "src/lib.rs"
+
+[profile.release]
+opt-level = 3
