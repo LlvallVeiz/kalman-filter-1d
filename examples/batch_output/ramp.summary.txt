@@ -1,0 +1,7 @@
+kalman-filter-1d — ramp.csv
+samples: 200
+RMSE raw measurements : 0.496934
+RMSE filtered         : 0.310732
+improvement factor    : 1.599x
+NEES mean             : 0.8323 (95% interval [0.8136, 1.2053]) → CONSISTENT
+mean NIS              : 0.7785

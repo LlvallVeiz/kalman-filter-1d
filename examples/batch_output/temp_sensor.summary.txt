@@ -1,0 +1,7 @@
+kalman-filter-1d — temp_sensor.csv
+samples: 288
+RMSE raw measurements : 0.193367
+RMSE filtered         : 0.111778
+improvement factor    : 1.730x
+NEES mean             : 0.1077 (95% interval [0.8433, 1.1698]) → INCONSISTENT
+mean NIS              : 0.1083

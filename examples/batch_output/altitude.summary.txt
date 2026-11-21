@@ -1,0 +1,7 @@
+kalman-filter-1d — altitude.csv
+samples: 1000
+RMSE raw measurements : 1.004302
+RMSE filtered         : 0.846714
+improvement factor    : 1.186x
+NEES mean             : 6.1884 (95% interval [0.9143, 1.0895]) → INCONSISTENT
+mean NIS              : 6.3399
